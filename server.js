@@ -31,7 +31,7 @@ mongoose.connect("mongodb://localhost/scraper", { useNewUrlParser: true });
 
 // Routes
 
-// A GET route for scraping the echoJS website
+// A GET route for scraping the Rivard Report technology website
 app.get("/scrape", function(req, res) {
   // First, we grab the body of the html with axios
   axios.get("https://therivardreport.com/technology/").then(function(response) {
